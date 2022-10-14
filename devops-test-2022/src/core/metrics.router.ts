@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import promBundle from 'express-prom-bundle';
+import promBundle from 'express-prom-bundle'
+import { Registry } from 'prom-client'
 import { ForbiddenError } from './errors/forbidden.error';
 
 export type MetricsConfig = {
@@ -27,6 +28,8 @@ export const applyMetrics = <T extends AffluRouter<T>>(router: T, config: Metric
         next();
     });
 
+    
+
     router.use(
         promBundle({
             metricsPath: config.metricsPath ?? '/metrics',
@@ -40,6 +43,7 @@ export const applyMetrics = <T extends AffluRouter<T>>(router: T, config: Metric
                     labels: { app: config.label },
                 },
             },
+            promRegistry: new Registry()
         })
     );
 

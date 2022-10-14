@@ -3,5 +3,13 @@ global:
   evaluation_interval: 5s
 
 scrape_configs:
-  - job_name: 'todo-list'
-    # complete me
+  - job_name: todo-list
+    static_configs:
+      - targets: ['tasks:8090']
+    authorization:
+      credentials: 'abaddjek'
+
+       # Sets the authentication type of the request.
+     #- type: 'Be'
+     #- default: Bearer
+      # `credentials_file`.

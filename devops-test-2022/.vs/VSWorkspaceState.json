@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\metrics",
+    "\\src",
+    "\\src\\core",
+    "\\src\\tasks",
+    "\\src\\tasks\\controllers",
+    "\\src\\tasks\\models",
+    "\\src\\tasks\\repositories",
+    "\\src\\tasks\\services"
   ],
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

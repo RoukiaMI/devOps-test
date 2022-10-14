@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\devops-test-2022",
+    "\\devops-test-2022\\metrics",
+    "\\devops-test-2022\\src",
+    "\\devops-test-2022\\src\\core",
+    "\\devops-test-2022\\src\\tasks",
+    "\\devops-test-2022\\src\\tasks\\services"
+  ],
+  "SelectedNode": "\\devops-test-2022\\docker-compose.yml",
+  "PreviewInSolutionExplorer": false
+}
